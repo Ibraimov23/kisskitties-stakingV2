@@ -15,7 +15,7 @@ const StyledStakeItemContainer = styled.div`
   color: #fff;
   box-sizing: border-box;
   padding: 32px;
-  filter: brightness(80%) contrast(300%) saturate(300%);;
+  filter: brightness(80%) contrast(300%);
   @media (max-width: 600px) {
     min-width: auto !important;
     border-radius: 15px;
