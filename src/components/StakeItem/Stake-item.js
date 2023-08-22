@@ -15,7 +15,7 @@ const StyledStakeItemContainer = styled.div`
   color: #fff;
   box-sizing: border-box;
   padding: 32px;
-  filter: brightness(80%) contrast(300%);
+  filter: brightness(80%) contrast(200%);
   @media (max-width: 600px) {
     min-width: auto !important;
     border-radius: 15px;
@@ -79,8 +79,9 @@ export const StyledStakeItemBuy = styled.a`
     letter-spacing: 0.02em;
     -webkit-transition-duration: .3s;
     transition-duration: .3s;
-    padding: 5px;
-    ${(props) => props.activeButton && "background: #ff0035;"}
+    padding: 1vh 1vh 1vh 1vh;
+    filter: brightness(80%) contrast(300%);
+    ${(props) => props.activeButton && "background: linear-gradient(83.53deg, #fd7aa3, #111129 200%);"}
     ${(props) =>
         props.activeButton &&
         "&:hover { background-position: left center; background-size: 200%; box-shadow: 0 0 16px #ff0035; -moz-box-shadow: 0 0 16px #ff0035; -o-box-shadow: 0 0 16px #ff0035; -ms-box-shadow: 0 0 16px #ff0035; -webkit-box-shadow: 0 0 16px #ff0035;}"}
@@ -135,7 +136,7 @@ export const StyledStakeItemButton = styled.a`
     -webkit-transition-duration: .3s;
     transition-duration: .3s;
 }
-  ${(props) => props.activeButton && "background: #ff0035;"}
+  ${(props) => props.activeButton && "background: linear-gradient(83.53deg, #fd7aa3, #111129 200%);"}
   ${(props) =>
       props.activeButton &&
       "&:hover { background-position: left center; background-size: 200%;box-shadow: 0 0 16px #ff0035; -moz-box-shadow: 0 0 16px #ff0035; -o-box-shadow: 0 0 16px #ff0035; -ms-box-shadow: 0 0 16px #ff0035; -webkit-box-shadow: 0 0 16px #ff0035;}"}

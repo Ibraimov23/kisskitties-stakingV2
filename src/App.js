@@ -61,6 +61,7 @@ const StyledBgDecL = styled.div`
     width: 779px;
     height: 100%;
     filter: blur(10px);
+    opacity: 0.5;
     z-index: -1;
   @media (max-width: 875px) {
     width: 610px;
@@ -74,11 +75,12 @@ const StyledBgDecR = styled.div`
     background-repeat: no-repeat;
     position: absolute;
     content: "";
-    right: -10px;
+    right: 0px;
     top: 90px;
     width: 570px;
     height: 100%;
     filter: blur(10px);
+    opacity: 0.5;
     z-index: -1;
     @media (max-width: 875px) {
         width: 300px;

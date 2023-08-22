@@ -27,7 +27,8 @@ const StyledHeader = styled.h1`
 `;
 
 const StyledVelocityx = styled.span`
-    -webkit-text-stroke: 7px #ff0035;
+    -webkit-text-stroke: 7px #fd7aa3;
+    filter: brightness(80%) contrast(300%);
     @media (max-width: 450px) {-webkit-text-stroke: unset;}
 `;
 
