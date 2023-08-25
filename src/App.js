@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect, Suspense } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import { Navigation } from "./components";
 import { Finance } from "./pages/Finance/Finance";
 import styled from "styled-components";
@@ -187,19 +187,6 @@ function App() {
     let [ walletType, setWalletType ] = useState(null);
 
     let [ update, setUpdate ] = useState(false);
-    let [imageLoaded, setImageLoaded] = useState(false);
-
-    useEffect(() => {
-        const image = new Image();
-        image.src = require('./assets/imgs/bg3_auto_x3.png'); 
-        image.onload = () => {
-          setImageLoaded(true);
-        };
-    }, []);
-
-    const particlesInit = (engine) => {
-        loadFull(engine);
-      };
 
     if (walletType && (Maccount || Waccount) && !account) {
         if (walletType === 'MetaMask') {
