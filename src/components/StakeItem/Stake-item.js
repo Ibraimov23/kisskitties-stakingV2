@@ -455,8 +455,8 @@ export const StakeItem = ({
           </StyledStakeItemButton>
       </StyledStakeItemRowWithButton> :
       <StyledStakeItemRowWithButton>
-          <StyledStakeItemButton onClick={ needToApprove ? (!approved ? approve : () => {}) : handleUseConnection } activeButton={ !approved } style={{ width: '100%' }}>
-              { needToApprove ? (approved ? 'Approved' : 'Approve') : t("STAKE.CONNECT") }
+          <StyledStakeItemButton onClick={ needToApprove ? (!approved ? () => {} : () => {}) : handleUseConnection } activeButton={ needToApprove ? false : true } style={{ width: '100%' }}>
+              { needToApprove ? (approved ? 'Approved' : 'SOON') : t("STAKE.CONNECT") }
           </StyledStakeItemButton>
       </StyledStakeItemRowWithButton> } {/*Отключено (Убрать проверку на версию и оставить кнопку для version === 1)*/}
       { account ? 
@@ -537,8 +537,8 @@ export const StakeItem = ({
       {/* <StyledStakeItemButton onClick={ needToApprove ? (!approved ? approve : () => {}) : handleUseConnection } activeButton={ !approved } style={{ width: '100%' }}>
         { needToApprove ? (approved ? 'Approved' : 'Approve' ) : t("STAKE.CONNECT") }
        </StyledStakeItemButton> */} 
-       <StyledStakeItemButton onClick={ needToApprove ? (!approved ? approve : () => {}) : handleUseConnection } activeButton={ !approved} style={{ width: '100%' }}>
-        { needToApprove ? (approved ? 'Approved' : 'Approve' ) : t("STAKE.CONNECT") }
+       <StyledStakeItemButton onClick={ needToApprove ? (!approved ? () => {}: () => {}) : handleUseConnection } activeButton={ needToApprove ? false : true} style={{ width: '100%' }}>
+        { needToApprove ? (approved ? 'Approved' : 'SOON' ) : t("STAKE.CONNECT") }
        </StyledStakeItemButton>{/*Отключено (Убрать эту вернуть закоменченную)*/}
 </StyledStakeItemRowWithButton>
 { account ? 
